@@ -33,7 +33,7 @@ steps:
   - task: CopyFiles@2
     displayName: 'Copy build to staging area'
     inputs:
-      contents: 'public\**'
+      contents: 'client\public\**'
       targetFolder: $(Build.ArtifactStagingDirectory)
 
   - task: PublishBuildArtifacts@1
